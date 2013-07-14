@@ -3,5 +3,6 @@
 DATA_DIR=/mnt/data
 BACKUP_DIR=/mnt/backup
 
-rsync -av --delete --exclude=mysql/ $DATA_DIR $BACKUP_DIR
-
+if test -d $DATA_DIR && test -d $BACKUP_DIR; then
+	rsync -av --delete --exclude=mysql/ $DATA_DIR $BACKUP_DIR
+fi
