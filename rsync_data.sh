@@ -1,4 +1,7 @@
 #!/bin/bash
+# Script to backup a folder by synchronizing it (only copying changed files).
+#
+# Copyright (C) 2013 Dieter Adriaenssens <ruleant@users.sourceforge.net>
 
 DATA_DIR=/mnt/data
 BACKUP_DIR=/mnt/backup
