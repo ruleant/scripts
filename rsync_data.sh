@@ -12,5 +12,5 @@ EXCLUDEFILE=./exclude
 if test -d $DATA_DIR && test -d $BACKUP_DIR && test -w $BACKUP_DIR; then
     rsync -av --delete --delete-excluded $EXCLUDE --exclude-from=$EXCLUDEFILE $DATA_DIR $BACKUP_DIR
 else
-    echo "Source or backup dir don't exist, or data dir is not writeable."
+    echo "Source or backup dir doesn't exist, or data dir is not writeable."
 fi
